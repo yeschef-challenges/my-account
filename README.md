@@ -34,4 +34,6 @@ Notice:
 - Clean code (readable and reuseable) - **10%**
 - Proactive (Is something missing in the requirements?) - **10%**
 
+Task should take about **60 min**
+
 # Good Luck!
