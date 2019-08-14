@@ -51,6 +51,7 @@ const styles = {
     display: 'flex',
     flex: 1,
     padding: 24,
+    paddingBottom: 10,
     alignItems: 'start',
     justifyItems: 'start'
   },

@@ -144,12 +144,12 @@ class SignUp extends React.Component {
             SIGN IN
           </Button>
         </ThemeProvider>
-        <p style={styles.disclaimer}>
+        <div style={styles.disclaimer}>
           By signing up, you agree to our <br />
           <a href="#" style={styles.disclaimer.href}>Privacy Policy</a>
           &nbsp;and&nbsp;
           <a href="#" style={styles.disclaimer.href}>Terms of Service</a>.
-        </p>
+        </div>
       </React.Fragment>
     );
   }
@@ -183,7 +183,7 @@ const styles = {
       fontSize: 14,
       fontWeight: 600,
       height: 56,
-      marginTop: 25,
+      marginTop: 24,
       borderRadius: 6
     }
   },
@@ -195,6 +195,7 @@ const styles = {
   textField: {
     width: "100%",
     height: 56,
+    marginBottom: 0,
     marginTop: 25,
   },
   disclaimer: {
@@ -203,6 +204,7 @@ const styles = {
     opacity: 0.8,
     textAlign: "center",
     padding: 25,
+    alignSelf: 'start',
     href: {
       color: "white"
     }

@@ -14,10 +14,11 @@ body {
   border-color: darkred !important;
 }
 
-.MuiFormHelperText-root
+.MuiFormHelperText-root.MuiFormHelperText-contained
 {
   position: absolute;
   bottom: -17px;
+  font-size: 11px;
 }
 
 .MuiFormLabel-root.Mui-error {

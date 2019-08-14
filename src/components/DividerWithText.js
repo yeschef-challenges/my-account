@@ -28,12 +28,13 @@ const styles = {
     display: "flex",
   },
   divider: {
-    backgroundColor: "white",
+    backgroundColor: 'rgba(255,255,255,0.7)',
     flex: 1,
     alignSelf: "center",
   },
   innerText: {
     color: "white",
+    fontSize: 14,
     flex: 0,
     margin: "0 10px",
     fontWeight: 600,
