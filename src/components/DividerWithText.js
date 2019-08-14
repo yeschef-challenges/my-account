@@ -23,7 +23,8 @@ export default DividerWithText;
 
 const styles = {
   container: {
-    padding: "25px 0",
+    marginTop: 25,
+    padding: 0,
     display: "flex",
   },
   divider: {

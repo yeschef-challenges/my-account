@@ -193,7 +193,9 @@ const styles = {
     padding: 10
   },
   textField: {
-    width: "100%"
+    width: "100%",
+    height: 56,
+    marginTop: 25,
   },
   disclaimer: {
     color: "white",
