@@ -1,0 +1,36 @@
+.signup-form__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20pt;
+  font-weight: 600;
+  padding: 0 32px;
+}
+
+.privacy-policy-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0 10%;
+}
+
+.privacy-policy-text a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.signup-form__separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator {
+  background-color: #ffffff;
+  height: 1px;
+  flex: 1;
+}
+
+.separator__text {
+  margin: 15px 10px;
+}
