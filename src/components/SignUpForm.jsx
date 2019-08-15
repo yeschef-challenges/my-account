@@ -10,15 +10,20 @@ const useStyles = makeStyles({
   form: {
     display: "flex",
     flexDirection: "column",
-    margin: "32px"
+    margin: "24pt"
   },
   styledButton: {
-    borderRadius: "6px",
-    minHeight: "56px",
-    marginBottom: "20px"
+    borderRadius: "6pt",
+    minHeight: "56pt",
+    marginBottom: "24pt",
+    fontSize: "14pt"
   },
   buttonIcon: {
-    marginRight: "10px"
+    marginRight: "12pt",
+    width: "25pt"
+  },
+  googleIcon: {
+    width: "19pt"
   }
 });
 
@@ -46,25 +51,26 @@ export default function SignUpForm(props) {
   };
 
   const handleSubmit = () => {
-    if (!name ) {
-      return setNameError('Name is required')
+    if (!name) {
+      return setNameError("Name is required");
     }
-    if (!email ) {
-      return setEmailError('Email is required')
+    if (!email) {
+      return setEmailError("Email is required");
     }
-    if (!password ) {
-      return setPasswordError('Password is required')
+    if (!password) {
+      return setPasswordError("Password is required");
     }
-    if( /(.+)@(.+){2,}\.(.+){2,}/.test(email) ){
+    if (/(.+)@(.+){2,}\.(.+){2,}/.test(email)) {
       // valid email
     } else {
-      return setEmailError('Please enter a valid email address')
+      return setEmailError("Please enter a valid email address");
     }
     if (password.length < 6) {
-      return setPasswordError('Password needs to be at least 6 characters long')
+      return setPasswordError(
+        "Password needs to be at least 6 characters long"
+      );
     }
-
-  }
+  };
 
   const classes = useStyles();
   return (
@@ -80,9 +86,13 @@ export default function SignUpForm(props) {
       <Button
         className={classes.styledButton}
         variant="contained"
-        style={{ backgroundColor: "#FFFFFF" }}
+        style={{ backgroundColor: "#FFFFFF", color: "#494949" }}
       >
-        <img src={GoogleIcon} alt="google" className={classes.buttonIcon} />
+        <img
+          src={GoogleIcon}
+          alt="google"
+          className={`${classes.buttonIcon} ${classes.googleIcon}`}
+        />
         USE GOOGLE
       </Button>
       <div className="signup-form__separator">
@@ -97,16 +107,16 @@ export default function SignUpForm(props) {
         handleChange={handleNameChange}
         error={nameError}
       />
-      <SignUpInput 
-        placeholder="Email" 
+      <SignUpInput
+        placeholder="Email"
         name="email"
         value={email}
-        handleChange={handleEmailChange} 
+        handleChange={handleEmailChange}
         error={emailError}
-        />
-      <SignUpInput 
-        placeholder="Password" 
-        name="password" 
+      />
+      <SignUpInput
+        placeholder="Password"
+        name="password"
         value={password}
         handleChange={handlePasswordChange}
         error={passwordError}
@@ -120,8 +130,8 @@ export default function SignUpForm(props) {
         SIGN UP
       </Button>
       <p className="privacy-policy-text">
-        By signing up, you agree to our <a href="#">Privacy Policy </a> and
-        <a href="#"> Terms of Service.</a>
+        By signing up, you agree to our <a href="#">Privacy Policy</a> and{" "}
+        <a href="#">Terms of Service.</a>
       </p>
     </form>
   );

@@ -4,17 +4,26 @@ import { withStyles } from "@material-ui/core/styles";
 
 const StyledInput = withStyles({
   root: {
-    margin: '10px 0',
+    marginBottom: '24pt',
+    '&:last-of-type': {
+      marginBottom: '8pt'
+    },
     '& .MuiOutlinedInput-notchedOutline': {
       borderColor: 'rgba(255, 255, 255, 0.7)',
-      borderWidth: '0.5px'
+      borderWidth: '0.5pt',
+      borderRadius: '6pt'
     },
     '& input': {
       color: '#FFFFFF',
       fontFamily: 'Open Sans',
+      height: '56pt',
+      padding: '0 12pt',
     },
     '& p': {
-      color: 'rgba(255, 255, 255, 0.8)'
+      color: 'rgba(255, 255, 255, 0.8)',
+      fontFamily: 'Open Sans',
+      fontWeight: '300',
+      fontSize: '11pt'
     }
   }
 })(TextField)

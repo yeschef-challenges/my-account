@@ -14,12 +14,18 @@ const styles = {
     maxWidth: "375pt",
     width: "100%",
     margin: "75px auto",
-    height: "1000px",
-    padding: "0"
+    height: "812pt",
+    padding: "0",
+    fontSize: '14pt'
   },
   closeIcon: {
-    width: "30px",
-    height: "30px"
+    width: "20pt",
+    height: "20.67pt"
+  },
+  tab: {
+    fontSize: '14pt',
+    fontWeight: '600',
+    fontFamily: 'Open Sans'
   }
 };
 
@@ -50,9 +56,10 @@ class Register extends React.PureComponent {
           onChange={this.handleTab}
           centered
           variant="fullWidth"
+          
         >
-          <Tab label="SIGN UP" />
-          <Tab label="SIGN IN" disabled />
+          <Tab className={classes.tab} label="SIGN UP" />
+          <Tab className={classes.tab} label="SIGN IN" disabled />
         </Tabs>
         {this.state.selectedTab === 0 && <SignUpForm />}
       </Container>
