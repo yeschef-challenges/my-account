@@ -1,33 +1,135 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  width: 375px;
+  height: 812px;
+  background-color: #1e1e1e;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-title {
+  padding: 24px;
+  color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.tab-header {
+  display: flex;
+}
+
+.tab-link {
+  padding: 4px;
+  width: 50%;
+  text-align: center;
+  color: #929292;
+  border-bottom: 1px solid #929292;
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+  border-bottom: 2px solid #FF007F;
+}
+
+.tab-content {
+  padding: 24px;
+  color: #929292;
+}
+
+.btn {
+  width: 100%;
+  padding: 18px;
+  background-color: white;
+  color: #494949;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.btn-icon {
+  margin-right: 12px;
+}
+
+.form-input {
+  margin: 12px 0px;
+}
+
+.facebook {
+  background-color: #4367B2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.signup {
+  background-color: #FF007F;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hr {
+  flex: 1;
+  height: 100%;
+  border-bottom: 1px solid #929292;
+  color: #929292;
+}
+
+.orspan {
+  margin: 0px 12px;
+  color: white;
+}
+
+.input {
+  background-color: #1e1e1e;
+  border: 1px solid #929292;
+  padding: 19px 12px;
+  color: #929292;
+  width: calc(100% - 24px);
+  outline: 0;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.underline {
+  border-bottom: 1px solid #929292;
+}
+
+.policy {
+  font-size: 14px;
+  text-align: center;
+  padding: 0px 47px;
+}
+
+.error-message {
+  visibility: hidden;
+  color: #CF6679;
+  padding-left: 13px;
+  font-size: 11px;
+}
+
+.error {
+  color: #CF6679;
+  border: 1px solid #CF6679;
+}
+
+.error::-webkit-input-placeholder {
+  color: #CF6679;
+}
+
+.pwd-error {
+  visibility: visible;
+  color: #929292;
 }
