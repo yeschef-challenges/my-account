@@ -13,13 +13,16 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     height: '56px',
     backgroundColor: '#4367B2',
+    fontSize: '14px',
     fontWeight: '400',
   },
   defaultButton: {
+    margin: theme.spacing(0),
     marginBottom: theme.spacing(3),
-    backgroundColor: '#ffffff',
     width: '100%',
     height: '56px',
+    backgroundColor: '#ffffff',
+    fontSize: '14px',
     fontWeight: '400'
   },
   signUpButton: {
@@ -117,28 +120,36 @@ function SignUp() {
   return (
     <div className="container">
       <div className="header">
-        <h2 className="no-margin">MY ACCOUNT</h2>
-        <a href="#!"><i className="material-icons">clear</i></a>
+        <label className="no-margin">MY ACCOUNT</label>
+        <a href="#!"><i className="material-icons clear-btn">clear</i></a>
       </div>
       <div className="content">
         <Button variant="contained" color="primary" className={classes.primaryButton}>
           <img src={facebook} alt="facebook" className="fb-icon"></img>
-          USE FACEBOOK
+          <label className="fb-text">USE FACEBOOK</label>
         </Button>
         <Button variant="contained" className={classes.defaultButton}>
-          <img src={google} alt="google" className="fb-icon"></img>
-          USE GOOGLE
+          <img src={google} alt="google" className="gl-icon"></img>
+          <label className="gl-text">USE GOOGLE</label>
         </Button>
         <div className="divider">
           <span>OR</span>
         </div>
         <TextField
+          error={values.label.name !== ''}
           id="outlined-full-width"
           style={{ color: 'white' }}
           placeholder="Name"
+          name="name"
           helperText={values.label.name}
           fullWidth
           margin="normal"
+          InputProps={{
+            classes: {
+              notchedOutline: classes.notchedOutline,
+              focused: classes.focused
+            }
+          }}
           variant="outlined"
           onChange={handleChange('name')}
           InputLabelProps={{
@@ -146,9 +157,11 @@ function SignUp() {
           }}
         />
         <TextField
+          error={values.label.email !== ''}
           id="outlined-full-width"
           style={{ color: 'white' }}
           placeholder="Email"
+          name="email"
           helperText={values.label.email}
           fullWidth
           margin="normal"
@@ -159,9 +172,11 @@ function SignUp() {
           }}
         />
         <TextField
+          error={values.label.password !== ''}
           id="outlined-full-width"
           style={{ color: 'white' }}
           placeholder="Password"
+          name="password"
           helperText={values.label.password}
           fullWidth
           margin="normal"
@@ -173,7 +188,7 @@ function SignUp() {
         />
         <label className={values.pwdLabelClassName}>At least 6 characters</label>
         <Button variant="contained" color="secondary" className={classes.signUpButton} onClick={signup}>
-          SIGN UP
+          <label className="signup-text">SIGN UP</label>
         </Button>
         <label className="description">By signing up, you agree to our <br/><span>Privacy</span> <span>Policy</span> and <a href="#!">Terms of Service</a>.</label>
       </div>

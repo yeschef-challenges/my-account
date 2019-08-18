@@ -12,18 +12,24 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   box-sizing: border-box;
 }
 
-.header h2 {
-  font-weight: 600;
+.header label {
+  color: #FFFFFF;
+  line-height: 26px;
+  width: 185px;
+  text-align: left;
+  font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
 }
 
-.header a {
+.header .clear-btn {
   color: white;
+  font-weight: 100;
+  font-size: 22px;
+  margin: -12px -5px 0px 0px;
+  text-decoration: none;
 }
 
 .content {
@@ -33,12 +39,40 @@
 .fb-icon {
   width: 25px;
   height: 25px;
-  margin-right: 20px;
+  margin-right: 12px;
+  margin-left: -4px;
+}
+
+.gl-icon {
+  width: 19px;
+  height: 19px;
+  margin-right: 12px;
+  margin-left: -18px;
+}
+
+.fb-text {
+  margin-top: 5px;
+  font-weight: 600;
+  letter-spacing: 0 !important;
+}
+
+.gl-text {
+  font-weight: 600;
+  letter-spacing: 0 !important;
+}
+
+.signup-text {
+  margin: 0px 0px 0px -6px !important;
 }
 
 .MuiButton-label {
   display: flex !important;
   align-items: center !important;
+  margin: 2px 0px 0px 6px;
+}
+
+.MuiFormControl-root {
+  height: 56px !important;
 }
 
 .MuiInputBase-root {
@@ -47,24 +81,47 @@
   font-size: 14px !important;
 }
 
+.MuiInputBase-input {
+  height: 56px !important;
+  box-sizing: border-box !important;
+}
+
 .MuiFormHelperText-root {
-  color: red !important;
+  color: #CF6679 !important;
   font-weight: 100 !important;
+  font-size: 11px !important;
+  margin-top: 4px !important;
+}
+
+.MuiButton-root {
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .MuiOutlinedInput-notchedOutline {
   border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
+.MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #CF6679 !important;
+}
+
+.MuiOutlinedInput-input {
+  padding: 12px 12px 16px 12px !important;;
+}
+
+.error {
+  border: 1px solid #CF6679 !important;
+}
+
 .MuiFormControl-marginNormal {
   margin: 0 !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 24px !important;
 }
 
 .description {
   color: rgba(255, 255, 255, 0.7);
-  font-weight: 100;
-  font-size: 15px;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .description span {
@@ -80,7 +137,7 @@
   width: 100%;
   height: 0;
   position: relative;
-  margin-bottom: 29px;
+  margin-bottom: 33px;
   margin-top: 9px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
@@ -88,21 +145,22 @@
 .divider span {
   position: absolute;
   display: block;
-  top: -10px;
+  top: -9px;
   background-color: #1E1E1E;
-  left: calc(50% - 15px);
+  font-size: 14px;
+  left: calc(50% - 20px);
   padding: 0px 10px;
 }
 
 .MuiFormHelperText-password {
-  margin: 0px 0px 10px 12px;
+  margin: -20px 0px 10px 12px;
   float: left;
   display: none;
   color: grey;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   min-height: 1em;
   text-align: left;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   line-height: 1em;
   letter-spacing: 0.03333em;
   align-self: flex-start;
