@@ -1,0 +1,19 @@
+.sign-up {
+    width: 375pt;
+    height: 812pt;
+    background-color: #1E1E1E;
+    color: #fff;
+
+    &_header {
+        display: flex;
+
+        h1 {
+            font-weight: 600;
+        }
+    }
+
+    &_inputs {
+        display: flex;
+        flex-direction: column;
+    }
+}

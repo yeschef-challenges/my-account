@@ -1,0 +1,47 @@
+.signup-form {
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 20pt;
+    font-weight: 600;
+    padding: 0 24pt;
+  }
+
+  &__separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 19pt;
+  }
+
+}
+
+.privacy-policy-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 14pt;
+  width: 231pt;
+  margin: 0 auto;
+
+  a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.separator {
+  background-color: #ffffff;
+  height: 0.8pt;
+  flex: 1;
+
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+    margin: 0 11pt;
+  }
+}
