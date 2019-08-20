@@ -1,0 +1,80 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "plugins": [
+    "react",
+    "jest"
+  ],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "no-useless-constructor": "off",
+    "react/destructuring-assignment": "off",
+    "react/display-name": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": 2,
+    "react/react-in-jsx-scope": "off",
+    "import/no-named-as-default": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off",
+    "no-use-before-define": "off"
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}

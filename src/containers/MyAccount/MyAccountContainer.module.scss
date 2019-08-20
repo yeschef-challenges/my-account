@@ -1,0 +1,121 @@
+.wrapper {
+  height: 100%;
+  background: #1e1e1e;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .close {
+    padding: 0px;
+    color: #ffffff;
+  }
+
+  .container {
+    padding: 24px;
+
+    .btnSocial {
+      margin-bottom: 24px;
+    }
+
+    .btnFacebook {
+      background: #4367b2;  
+    }
+
+    .btnGoogle {
+      background: #ffffff;
+    }
+
+    .btnGoogleText {
+      color: #494949;
+    }
+
+    .divider { 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+
+      .line {
+        flex: 1;
+        height: 1px;
+        background: #FFFFFF;
+      }
+
+      span {
+        color: #FFFFFF;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        margin: 0px 10px;
+      }
+    }
+
+    .input {
+      width: 100%;
+      border: 1px solid #CF6679;
+      border-radius: 6px;
+      box-sizing: border-box;
+      height: 56px;
+      padding: 19px 12px;
+      background: transparent;
+      color: #FFFFFF;
+      font-family: 'Open Sans';
+      font-size: 14px;
+      font-weight: 300;
+      text-align: left;
+    }
+
+    .errorInfo {
+      height: 24px;
+      padding-left: 13px;
+      color: #CF6679;
+      font-family: 'Open Sans';
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 13px;
+      margin-top: 1px;
+    }
+
+    .btnSignup {
+      width: 100%;
+      background-color: #FF007F;
+      border-radius: 6px;
+      height: 56px;
+      color: #FFFFFF;
+      font-family: 'Open Sans';
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+      text-align: center;
+      border-style: none;
+      margin-bottom: 24px;
+    }
+
+    .desc {
+      margin: auto;
+      color: rgba(255, 255, 255, 0.8);
+      font-family: 'Open Sans';
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17px;
+      width: 231px;
+      text-align: center;
+
+      a {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
