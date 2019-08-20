@@ -2,7 +2,6 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jest": true,
     "node": true
   },
   "extends": [
@@ -22,19 +21,45 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": ["react", "jest"],
+  "plugins": [
+    "react",
+    "jest"
+  ],
   "rules": {
-    "comma-dangle": ["error", "always-multiline"],
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
     "no-console": "off",
     "no-unused-vars": "off",
     "no-useless-constructor": "off",
     "react/destructuring-assignment": "off",
     "react/display-name": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "react/prefer-stateless-function": "off",
     "react/prop-types": 2,
     "react/react-in-jsx-scope": "off",

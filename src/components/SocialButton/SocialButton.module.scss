@@ -1,0 +1,20 @@
+.wrapper {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  .text {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    margin-left: 12px;
+  }
+}
